@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #38424d;
+  color: white;
+  transition: all .6s;
+}
+
+.body-background {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* header section */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  background-color: #2B3743;
+  color: #fff;
+  transition: 0.5s !important;
+}
+
+.main-header.navtop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  height: 65px;
+  background-color: #2f3942;
+}
+
+.main-header.activ1 {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px #000;
+}
+
+.darc-button.activ2 {
+  color: black;
+  font-weight: 550;
+}
+
+.darc-button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+/* input section */
+.input {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.main-input, .search-input {
+  background-color: #2B3743;
+  padding: .5rem 2.5rem;
+  border-radius: 10px;
+}
+
+.main-input.activ3 {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 5px #000;
+}
+
+.search-input.activ4 {
+  background-color: white;
+  color: #000;
+}
+
+.search.black {
+  color: #000;
+  font-size: .77rem;
+  padding: .2rem;
+}
+
+.search {
+  color: #fff;
+  font-size: .77rem;
+  padding: .2rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: .87rem;
+  color: white;
+}
+
+.main-select select { 
+  background-color: #2B3743;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: .4rem;
+  font-size: .87rem;
+  outline: none;
+}
+
+select.activ5 {
+  background-color: white;
+  color: #000;
+  box-shadow: 0 0 5px #000;
+}
+
+/* Card section */
+.main-card {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+
+.main-card_body {
+  width: 240px;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+}
+
+.main-card_image {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.main-card_image img {
+  height: 150px;
+  transition: .5s;
+  width: 100%;
+}
+
+.main-card_image:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.main-card_info {
+  padding: .2rem 1.4rem;
+}
